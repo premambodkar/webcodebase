@@ -1,9 +1,9 @@
 {
-  "name": "startd-theme",
-  "description": "A TypeScript/Next.js theme that includes everything you need to build amazing landing page!",
+  "name": "tekmblical",
+  "description": "Our code base setup",
   "version": "1.0.0",
   "private": true,
-  "author": "Jaakko Kytölä <kytola.jaakko@gmail.com> (jaakkokytola.com)",
+  "author": "Prem Ambodkar",
   "license": "MIT",
   "keywords": [
     "nextjs",
