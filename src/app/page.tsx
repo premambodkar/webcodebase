@@ -1,72 +1,89 @@
-'use client';
+"use client"
 
-import { useState } from "react";
-import dynamic from "next/dynamic";
-import HeroSection from "../../components/HeroSection";
-import Navbar from "../../components/Navbar";
-import ServicesSection from "../../components/ServicesSection";
+import Head from 'next/head';
+import "./globals.css";
+import ContactForm from '../../component/ContactForm';
+import { useEffect, useState } from 'react';
+import { FooterContext } from '../../component/FooterContext';
 
-// Lazy load modal with animation
-const ContactFormModal = dynamic(() => import("../../components/ContactFormModal"), { ssr: false });
+const services = [
+  { title: 'Web Development', desc: 'Responsive and scalable websites using React, Angular, Next.js, and Node.js.' },
+  { title: 'Mobile App Development', desc: 'Cross-platform and native mobile apps using React Native, Flutter, Swift, and Kotlin.' },
+  { title: 'UI/UX Design', desc: 'Modern, intuitive interfaces built with user-centric design principles and accessibility in mind.' },
+  { title: 'Custom Software Development', desc: 'Tailored ERP, CRM, SaaS, and enterprise solutions to streamline your business processes.' },
+  { title: 'CMS & E-commerce', desc: 'Custom content management systems and online stores using WordPress, Magento, and Shopify.' },
+  { title: 'Progressive Web Apps (PWA)', desc: 'App-like web experiences with offline support, push notifications, and faster performance.' },
+  { title: 'Cloud & DevOps', desc: 'Cloud-native development, CI/CD, Docker, Kubernetes, and infrastructure automation on AWS, Azure, and GCP.' },
+  { title: 'QA & Testing', desc: 'Manual and automated testing for functionality, performance, and security across platforms.' },
+  { title: 'AI & Emerging Tech', desc: 'Integrate AI, machine learning, chatbots, AR/VR, and blockchain into your digital products.' },
+];
 
-const Home = () => {
-  const [showContactForm, setShowContactForm] = useState(false);
+export default function Home() {
+  const [config, setConfig] = useState<any>(null);
+
+  useEffect(() => {
+    loadConfig()
+  }, [])
+
+  const loadConfig = async () => {
+    try {
+      const response = await fetch('/config.json');
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const config = await response.json();
+      setConfig(config)
+    } catch (error) {
+      console.error('Failed to load config:', error);
+    }
+  };
 
   return (
     <>
-       <Navbar />
-      {/* Fixed Navbar */}
-     
+      <Head>
+        <title>{config?.site_title}</title>
+        <meta name="description" content="Custom Web & Mobile Software Development" />
+      </Head>
 
-      <main className="min-h-screen bg-gray-100 pt-24"> {/* 👈 Adds top padding so content is not hidden under navbar */}
-        {/* Hero Section */}
-        <HeroSection />
+      <header className="bg-header-dark text-white py-5 text-center">
+        <div className="container">
+          <h1 className="display-4">{config?.site_title}</h1>
+          <p className="lead">{config?.site_description}</p>
+        </div>
+      </header>
 
-        {/* Services Section */}
-        <ServicesSection />
+      <section id="services" className="py-5 bg-light">
+        <div className="container">
+          <h2 className="mb-4 text-center">{config?.services?.title}</h2>
+          <div className="row">
+            {config?.services?.services.map((service: any, i: any) => (
+              <div className="col-md-4 mb-4" key={i}>
+                <div className="card h-100 shadow-sm">
+                  <div className="card-body text-center">
+                    <h5 className="card-title">{service.title}</h5>
+                    <p className="card-text">{service.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-        {/* About Section */}
-        <section id="about" className="py-16 bg-gray-100">
-          <div className="max-w-3xl mx-auto px-4 text-center">
-            <h3 className="text-3xl font-semibold mb-4">Why Choose Us?</h3>
-            <p className="text-gray-700 mb-6">
-              With 10+ years of experience and a global client base, we deliver scalable, high-quality solutions
-              on time and within budget.
+      <section id="about" className="py-5">
+        <div className="container">
+          <h2 className="mb-4 text-center">{config?.about_us?.title}</h2>
+          {config?.about_us?.description.map((service: any, i: any) => (
+            <p className="text-center" key={i}>
+              {service.text}
             </p>
-          </div>
-        </section>
+          ))}
+        </div>
+      </section>
 
-        {/* Contact CTA Section */}
-        <section id="contact" className="py-16 text-center bg-white">
-          <div className="max-w-xl mx-auto px-4">
-            <h3 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h3>
-            <p className="mb-6 text-gray-600">Let’s discuss how we can work together.</p>
-            <button
-              onClick={() => setShowContactForm(true)}
-              className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700"
-            >
-              Contact Us
-            </button>
-          </div>
-        </section>
+      <ContactForm />
 
-        {/* Footer */}
-        <footer className="bg-gray-800 text-white py-6 mt-10">
-          <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm text-center md:text-left">
-            <p className="mb-2 md:mb-0">&copy; {new Date().getFullYear()} TEKMBILICAL SOLUTIONS PRIVATE LIMITED.</p>
-            <div className="space-x-4">
-              <a href="#" className="hover:text-gray-300">Privacy</a>
-              <a href="#" className="hover:text-gray-300">Terms</a>
-            </div>
-          </div>
-        </footer>
-
-      </main>
-
-      {/* Contact Form Modal */}
-      {showContactForm && <ContactFormModal onClose={() => setShowContactForm(false)} />}
+      <FooterContext config={config}/>
     </>
   );
-};
-
-export default Home;
+}
