@@ -30,7 +30,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="container py-5">
+    <div id='contact' className="container py-5">
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <input

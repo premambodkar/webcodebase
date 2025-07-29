@@ -6,38 +6,47 @@
     "services": [
       {
         "title": "Web Development",
+        "image":"Web_Development.png",
         "desc": "Responsive and scalable websites using React, Angular, Next.js, and Node.js."
       },
       {
         "title": "Mobile App Development",
+        "image":"Mobile_App_Development.png",
         "desc": "Cross-platform and native mobile apps using React Native, Flutter, Swift, and Kotlin."
       },
       {
         "title": "UI/UX Design",
+        "image":"UI_UX_Design.png",
         "desc": "Modern, intuitive interfaces built with user-centric design principles and accessibility in mind."
       },
       {
         "title": "Custom Software Development",
+        "image":"Custom_Software_Development.png",
         "desc": "Tailored ERP, CRM, SaaS, and enterprise solutions to streamline your business processes."
       },
       {
         "title": "CMS & E-commerce",
+        "image":"CMS_&_E_commerce.png",
         "desc": "Custom content management systems and online stores using WordPress, Magento, and Shopify."
       },
       {
         "title": "Progressive Web Apps (PWA)",
+        "image":"Progressive_Web_Apps_PWA.png",
         "desc": "App-like web experiences with offline support, push notifications, and faster performance."
       },
       {
         "title": "Cloud & DevOps",
+        "image":"Cloud_&_DevOps.png",
         "desc": "Cloud-native development, CI/CD, Docker, Kubernetes, and infrastructure automation on AWS, Azure, and GCP."
       },
       {
         "title": "QA & Testing",
+        "image":"QA_&_Testing.png",
         "desc": "Manual and automated testing for functionality, performance, and security across platforms."
       },
       {
         "title": "AI & Emerging Tech",
+        "image":"AI_&_Emerging_Tech.png",
         "desc": "Integrate AI, machine learning, chatbots, AR/VR, and blockchain into your digital products."
       }
     ]
@@ -60,7 +69,7 @@
     "title": "Get in Touch",
     "description": "We’d love to hear from you. Reach out to us for inquiries, collaborations, or just to say hello.",
     "email": "contact@tekmbilical.com",
-    "phone": "+91-9876543210"
+    "phone": "+91-9307437693"
   },
   "social_links": [
     { "name": "facebook", "url": "https://facebook.com/tekmbilical", "icon": "bi-facebook" },

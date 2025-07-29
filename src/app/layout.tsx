@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-/>
       <body className={inter.className}>
-          <div>{children}</div>
+        <div>{children}</div>
       </body>
     </html>
   );
