@@ -1,13 +1,14 @@
 {
   "name": "tekmbilical-web-portal",
   "version": "2.0.0",
-  "description": " Landing Page Template",
+  "description": "TEKMBILICAL SOLUTIONS PRIVATE LIMITED",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,8 @@
     "tailwindcss",
     "free"
   ],
-  "author": "premchandra",
-  "license": "ISC",
+  "author": "TEKMBILICAL SOLUTIONS PRIVATE LIMITED",
+  "license": "MIT",
   "dependencies": {
     "@headlessui/react": "^2.0.3",
     "@heroicons/react": "^2.1.3",
