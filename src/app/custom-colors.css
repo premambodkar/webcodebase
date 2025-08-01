@@ -1,0 +1,36 @@
+/* =======================================
+   🎨 CUSTOM COLOR PALETTES FOR BOOTSTRAP
+   ======================================= */
+
+/* === PALETTE 1: Neo Tech Gradient === */
+:root {
+  --primary-neo: #6d28d9;
+  --secondary-neo: #ec4899;
+  --accent-neo: #facc15;
+  --bg-neo: #0f172a;
+  --card-bg-neo: #1e293b;
+  --text-light: #ffffff;
+}
+
+/* =======================================
+   🛠️ UTILITY CLASSES
+   ======================================= */
+
+/* === Neo Tech === */
+.bg-neo {
+  background-color: var(--bg-neo) !important;
+  color: var(--text-light) !important;
+}
+.card-neo {
+  background-color: var(--card-bg-neo);
+  color: var(--text-light);
+}
+.btn-neo {
+  background: linear-gradient(to right, var(--primary-neo), var(--secondary-neo));
+  border: none;
+  color: var(--text-light);
+}
+.btn-neo:hover {
+  background: var(--accent-neo);
+  color: var(--bg-neo);
+}

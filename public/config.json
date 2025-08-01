@@ -1,53 +1,63 @@
 {
   "site_title": "TEKMBILICAL SOLUTIONS PRIVATE LIMITED",
-  "site_description": "Crafting Modern Web & Mobile Applications",
+  "site_description": "Empowering Innovation with AI & Software Solutions",
+  "site_keywords": "AI, Software Development, Web Development, Mobile App Development, UI/UX Design, Custom Software, Cloud Solutions, DevOps",
+  "logo": "logo.png",
+  "favicon": "favicon.ico",
+  "header": {
+    "title": "TEKMBILICAL SOLUTIONS PRIVATE LIMITED",
+    "subtitle": "Empowering Innovation with AI & Software Solutions",
+    "short_descrpton": "Tekmbilical delivers cutting-edge digital solutions to accelerate your business.",
+    "cta_text": "Get Started",
+    "cta_link": "#contact"
+  },
   "services": {
     "title": "Our Services",
     "services": [
       {
         "title": "Web Development",
-        "image":"Web_Development.png",
-        "desc": "Responsive and scalable websites using React, Angular, Next.js, and Node.js."
+        "image": "Web_Development.png",
+        "desc": "Responsive, high-performance websites built with React, Angular, Next.js, and Node.js."
       },
       {
         "title": "Mobile App Development",
-        "image":"Mobile_App_Development.png",
-        "desc": "Cross-platform and native mobile apps using React Native, Flutter, Swift, and Kotlin."
+        "image": "Mobile_App_Development.png",
+        "desc": "Robust native and cross-platform mobile apps using React Native, Flutter, Swift, and Kotlin."
       },
       {
         "title": "UI/UX Design",
-        "image":"UI_UX_Design.png",
-        "desc": "Modern, intuitive interfaces built with user-centric design principles and accessibility in mind."
+        "image": "UI_UX_Design.png",
+        "desc": "User-centered design with intuitive interfaces and accessible, modern experiences."
       },
       {
         "title": "Custom Software Development",
-        "image":"Custom_Software_Development.png",
-        "desc": "Tailored ERP, CRM, SaaS, and enterprise solutions to streamline your business processes."
+        "image": "Custom_Software_Development.png",
+        "desc": "Scalable ERP, CRM, SaaS, and enterprise-grade solutions tailored to your workflow."
       },
       {
         "title": "CMS & E-commerce",
-        "image":"CMS_&_E_commerce.png",
-        "desc": "Custom content management systems and online stores using WordPress, Magento, and Shopify."
+        "image": "CMS_&_E_commerce.png",
+        "desc": "Custom CMS and e-commerce platforms built with WordPress, Magento, Shopify, and more."
       },
       {
         "title": "Progressive Web Apps (PWA)",
-        "image":"Progressive_Web_Apps_PWA.png",
-        "desc": "App-like web experiences with offline support, push notifications, and faster performance."
+        "image": "Progressive_Web_Apps_PWA.png",
+        "desc": "Fast, offline-ready web apps that deliver a native-like experience on the web."
       },
       {
         "title": "Cloud & DevOps",
-        "image":"Cloud_&_DevOps.png",
-        "desc": "Cloud-native development, CI/CD, Docker, Kubernetes, and infrastructure automation on AWS, Azure, and GCP."
+        "image": "Cloud_&_DevOps.png",
+        "desc": "Cloud-native development, CI/CD pipelines, Docker, Kubernetes, and automation with AWS, Azure, and GCP."
       },
       {
         "title": "QA & Testing",
-        "image":"QA_&_Testing.png",
-        "desc": "Manual and automated testing for functionality, performance, and security across platforms."
+        "image": "QA_&_Testing.png",
+        "desc": "Comprehensive manual and automated testing for functionality, performance, and security."
       },
       {
         "title": "AI & Emerging Tech",
-        "image":"AI_&_Emerging_Tech.png",
-        "desc": "Integrate AI, machine learning, chatbots, AR/VR, and blockchain into your digital products."
+        "image": "AI_&_Emerging_Tech.png",
+        "desc": "Integrating AI, machine learning, chatbots, AR/VR, and blockchain to enhance digital innovation."
       }
     ]
   },
@@ -55,27 +65,71 @@
     "title": "About Us",
     "description": [
       {
-        "text": "At our core, we are a dedicated team of developers and designers driven by passion and precision. We specialize in crafting high-performance web and mobile solutions tailored to meet your unique business goals. Backed by years of experience in the software industry, we combine technical excellence with a commitment to quality, ensuring reliable and scalable results every time."
+        "text": "We are a passionate team of developers, designers, and strategists dedicated to building impactful digital solutions. Our mission is to create high-quality, scalable web and mobile applications tailored to your business goals."
       },
       {
-        "text": "From intuitive UI/UX design to robust backend development, we offer end-to-end services that turn your ideas into digital reality. Our team stays ahead of the curve by leveraging the latest technologies like React, Next.js, Node.js, and Flutter to deliver modern, responsive, and user-friendly applications. We follow agile methodologies to ensure fast iterations, transparent communication, and on-time delivery."
+        "text": "From engaging UI/UX design to powerful backend architecture, we provide full-cycle development services using cutting-edge technologies like React, Next.js, Node.js, and Flutter. We work in agile sprints to ensure transparency, adaptability, and timely delivery."
       },
       {
-        "text": "Whether you're a startup looking to build your MVP or an enterprise aiming to scale your digital infrastructure, we adapt to your needs with flexibility and focus. Our goal is not just to deliver a product, but to create long-term value for your business. Let's build something great together."
+        "text": "Whether you're a startup building an MVP or an enterprise modernizing its digital infrastructure, we offer flexible, client-centric solutions that grow with your vision. Let's partner to turn your ideas into digital reality."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "description": "Here are some common questions we receive from our clients. If you have any other queries, feel free to reach out to us.",
+    "faqs": [
+      {
+        "question": "What kind of technologies do you specialize in?",
+        "answer": "We specialize in modern web and mobile technologies including React, Next.js, Node.js, Python, Flutter, and major cloud platforms like AWS and Azure."
+      },
+      {
+        "question": "Do you offer custom software development?",
+        "answer": "Absolutely. We design and build bespoke software tailored to your unique business requirements—ranging from MVPs to full-scale enterprise applications."
+      },
+      {
+        "question": "What is your project delivery process?",
+        "answer": "We follow an agile development workflow: discovery → design → development → testing → deployment → maintenance. This ensures flexibility, transparency, and high-quality outcomes."
+      },
+      {
+        "question": "Can you work with international clients?",
+        "answer": "Yes, we collaborate with clients globally, including the US, Europe, and APAC regions. Our communication and delivery processes are optimized for remote work."
+      },
+      {
+        "question": "Do you offer post-launch support?",
+        "answer": "Yes. We provide ongoing support, performance monitoring, and maintenance packages to ensure your product runs smoothly after launch."
       }
     ]
   },
   "contact_us": {
-    "title": "Get in Touch",
-    "description": "We’d love to hear from you. Reach out to us for inquiries, collaborations, or just to say hello.",
     "email": "contact@tekmbilical.com",
     "phone": "+91-9307437693"
   },
   "social_links": [
-    { "name": "facebook", "url": "https://facebook.com/tekmbilical", "icon": "bi-facebook" },
-    { "name": "twitter", "url": "https://twitter.com/tekmbilical", "icon": "bi-twitter" },
-    { "name": "linkedin", "url": "https://www.linkedin.com/company/tekmbilical-solutions-private-limited/", "icon": "bi-linkedin" },
-    { "name": "instagram", "url": "https://instagram.com/tekmbilical", "icon": "bi-instagram" },
-    { "name": "youtube", "url": "https://youtube.com/@tekmbilical", "icon": "bi-youtube" }
+    {
+      "name": "facebook",
+      "url": "https://facebook.com/tekmbilical",
+      "icon": "bi-facebook"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/tekmbilical",
+      "icon": "bi-twitter"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/company/tekmbilical-solutions-private-limited/",
+      "icon": "bi-linkedin"
+    },
+    {
+      "name": "instagram",
+      "url": "https://instagram.com/tekmbilical",
+      "icon": "bi-instagram"
+    },
+    {
+      "name": "youtube",
+      "url": "https://youtube.com/@tekmbilical",
+      "icon": "bi-youtube"
+    }
   ]
 }
